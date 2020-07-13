@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercici2_LR_Fase2</title>
+       
+    <script>
+        
+        var nom= ["x", "a", "v", "i", " ", "z", "u", "r", "i", "t", "a", " ", "r", "1", "c"]  //tb LET
+        var lletra="";
+        var inici=0;
+        // document.write("<br>" + nom + "<br>"); 
+        longitud = nom.length
+        
+        for (inici=0; inici<longitud; inici++) {
+            lletra = nom[inici]
+            
+			if(nom[inici]=="a" ||nom[inici]=="e" ||nom[inici]=="i" ||nom[inici]=="o" ||nom[inici]=="u") {
+				document.write("<br>" + lletra + " vocal " +  "<br>");
+				
+			} else if (nom[inici]=="0" ||nom[inici]=="1" ||nom[inici]=="2" ||nom[inici]=="3" ||nom[inici]=="4" ||nom[inici]=="5" ||nom[inici]=="6" ||nom[inici]=="7" ||nom[inici]=="8"  ||nom[inici]=="9") {
+				document.write("<br>" + lletra + " El nom no pot tenir números " +  "<br>");
+
+			} else {
+				document.write("<br>" + lletra + " consonante " +  "<br>");	
+				
+			}
+		}
+        
+   
+    </script>
+</head>
+<body>
+</body>
+</html>
